@@ -163,9 +163,10 @@ body {
 }
 
 .actions {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
   gap: 10px;
+  justify-content: end;
 }
 
 .action {
@@ -570,6 +571,10 @@ body {
     padding: 18px 18px 14px;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .actions {
+    justify-content: start;
   }
 
   .poem-wrap {
